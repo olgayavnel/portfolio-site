@@ -66,7 +66,7 @@ export const Banner = () => {
                 </span>
               </h1>
               <p>
-                Let's turn the world to a better place by making quality
+                Let's turn the world into a better place by making quality
                 software.
               </p>
               <a

@@ -18,7 +18,7 @@ import planet12 from '../assets/img/planet-12.svg';
 import planet13 from '../assets/img/planet-13.svg';
 import planet14 from '../assets/img/planet-14.svg';
 import planet15 from '../assets/img/planet-15.svg';
-import colorSharp from '../assets/img/color-sharp.png';
+import colorTile from '../assets/img/color-tile.png';
 
 export const Skills = () => {
   const responsive = {
@@ -43,8 +43,8 @@ export const Skills = () => {
 
   return (
     <section className='skill' id='skills'>
-      <Container className='container'>
-        <Row className='row'>
+      <Container>
+        <Row>
           <Col className='col-12'>
             <div className='skill-bx wow zoomIn'>
               <h2>Skills</h2>
@@ -56,6 +56,16 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className='owl-carousel owl-theme skill-slider'
+                // autoPlay={this.props.deviceType !== 'mobile' ? true : false}
+                autoPlay
+                autoPlaySpeed={3000}
+                keyBoardControl={true}
+                transitionDuration={500}
+                containerClass='carousel-container'
+                // removeArrowOnDeviceType={['tablet', 'mobile']}
+                // deviceType={this.props.deviceType}
+                dotListClass='custom-dot-list-style'
+                itemClass='carousel-item-padding-40-px'
               >
                 <div className='item'>
                   <img src={planet1} alt='ReactJS' />
@@ -122,7 +132,7 @@ export const Skills = () => {
           </Col>
         </Row>
       </Container>
-      <img className='background-image-left' src={colorSharp} alt='Image' />
+      <img className='background-image-left' src={colorTile} alt='color-tile' />
     </section>
   );
 };

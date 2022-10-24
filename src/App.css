@@ -43,7 +43,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #121212 !important;
+  background-color: rgb(15, 17, 37) !important;
   color: #fff !important;
   font-family: 'Orbitron', sans-serif !important;
 }
@@ -295,7 +295,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: rgb(3, 2, 16);
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -321,6 +321,15 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   width: 50%;
   margin: 0 auto 15px auto;
 }
+.skill-slider .item h5 {
+  padding: 0 10px 0;
+}
+.skill-slider button {
+  color: rgb(249, 230, 184);
+}
+.skill-slider button:hover {
+  background-color: rgb(11, 16, 40);
+}
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -333,7 +342,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: rgb(3, 2, 16, 0.5);
 }
 .project h2 {
   font-size: 45px;
