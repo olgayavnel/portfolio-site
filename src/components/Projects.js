@@ -1,11 +1,15 @@
-import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Tab from 'react-bootstrap/Tab';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 import { ProjectCard } from './ProjectCard';
 import projImg1 from '../assets/img/project-img1.svg';
 import projImg2 from '../assets/img/project-img2.svg';
 import projImg3 from '../assets/img/project-img3.svg';
 import colorSharp2 from '../assets/img/color-sharp2.png';
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
   const projects = [

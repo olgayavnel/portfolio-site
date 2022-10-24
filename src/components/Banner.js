@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import headerImg from '../assets/img/astronaut-2.svg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import headerImg from '../assets/img/astronaut-2.svg';
 
 export const Banner = () => {
   const categories = ['Web Developer', 'Software Engineer', 'Content Creator'];

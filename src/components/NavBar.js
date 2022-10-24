@@ -1,10 +1,17 @@
 import { useState, useEffect } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaTiktok } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -32,7 +39,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
         <Container>
-          <Navbar.Brand href='/'>
+          <Navbar.Brand href='#home'>
             <img src={logo} alt='Logo' />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav'>
@@ -70,19 +77,23 @@ export const NavBar = () => {
                 Projects
               </Nav.Link>
             </Nav>
-            <span className='navbar-text'>
-              <div className='social-icon'>
-                <a href='#'>
-                  <img src={navIcon1} alt='' />
-                </a>
-                <a href='#'>
-                  <img src={navIcon2} alt='' />
-                </a>
-                <a href='#'>
-                  <img src={navIcon3} alt='' />
-                </a>
-              </div>
-            </span>
+            <Nav className='social-icon'>
+              <a href='#'>
+                <FaLinkedinIn color='white' />
+              </a>
+              <a href='#'>
+                <FaInstagram color='white' />
+              </a>
+              <a href='#'>
+                <FaTiktok color='white' />
+              </a>
+              <a href='#'>
+                <FaYoutube color='white' />
+              </a>
+              <a href='#'>
+                <FaTwitter color='white' />
+              </a>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

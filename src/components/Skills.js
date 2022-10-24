@@ -1,5 +1,8 @@
-import Carousel from 'react-multi-carousel';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import 'react-multi-carousel/lib/styles.css';
+import Carousel from 'react-multi-carousel';
 import planet1 from '../assets/img/planet-1.svg';
 import planet2 from '../assets/img/planet-2.svg';
 import planet3 from '../assets/img/planet-3.svg';
@@ -16,7 +19,6 @@ import planet13 from '../assets/img/planet-13.svg';
 import planet14 from '../assets/img/planet-14.svg';
 import planet15 from '../assets/img/planet-15.svg';
 import colorSharp from '../assets/img/color-sharp.png';
-import { Col, Container, Row } from 'react-bootstrap';
 
 export const Skills = () => {
   const responsive = {
