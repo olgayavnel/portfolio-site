@@ -10,6 +10,11 @@ import planet7 from '../assets/img/planet-7.svg';
 import planet8 from '../assets/img/planet-8.svg';
 import planet9 from '../assets/img/planet-9.svg';
 import planet10 from '../assets/img/planet-10.svg';
+import planet11 from '../assets/img/planet-11.svg';
+import planet12 from '../assets/img/planet-12.svg';
+import planet13 from '../assets/img/planet-13.svg';
+import planet14 from '../assets/img/planet-14.svg';
+import planet15 from '../assets/img/planet-15.svg';
 import colorSharp from '../assets/img/color-sharp.png';
 import { Col, Container, Row } from 'react-bootstrap';
 
@@ -80,23 +85,35 @@ export const Skills = () => {
                 </div>
                 <div className='item'>
                   <img src={planet8} alt='Planet' />
-                  <h5>MongoDB / GraphQL</h5>
+                  <h5>MongoDB / Mongoose</h5>
                 </div>
                 <div className='item'>
                   <img src={planet9} alt='Planet' />
-                  <h5>SQL / PostgreSQL</h5>
+                  <h5>GraphQL</h5>
                 </div>
                 <div className='item'>
                   <img src={planet10} alt='Planet' />
+                  <h5>SQL / PostgreSQL</h5>
+                </div>
+                <div className='item'>
+                  <img src={planet11} alt='Planet' />
                   <h5>Docker / GitLab</h5>
                 </div>
                 <div className='item'>
-                  <img src={planet4} alt='Planet' />
-                  <h5>Java</h5>
+                  <img src={planet12} alt='Planet' />
+                  <h5>Java Fundamentals</h5>
                 </div>
                 <div className='item'>
-                  <img src={planet5} alt='Planet' />
+                  <img src={planet13} alt='Planet' />
                   <h5>Data Structures and Algorithms</h5>
+                </div>
+                <div className='item'>
+                  <img src={planet14} alt='Planet' />
+                  <h5>CSS Advanced Animation</h5>
+                </div>
+                <div className='item'>
+                  <img src={planet15} alt='Planet' />
+                  <h5>VueJS / NuxtJS</h5>
                 </div>
               </Carousel>
             </div>
