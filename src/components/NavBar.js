@@ -4,11 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import logo from '../assets/img/logo.svg';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { FaLinkedinIn } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -75,20 +73,26 @@ export const NavBar = () => {
               </Nav.Link>
             </Nav>
             <Nav className='social-icon'>
-              <a href='#'>
-                <FaLinkedinIn color='white' />
-              </a>
-              <a href='#'>
+              <a
+                href='https://www.instagram.com/coding_elf/'
+                rel='noreferrer'
+                target='_blank'
+              >
                 <FaInstagram color='white' />
               </a>
-              <a href='#'>
+              <a
+                href='https://www.tiktok.com/@coding_elf/'
+                rel='noreferrer'
+                target='_blank'
+              >
                 <FaTiktok color='white' />
               </a>
-              <a href='#'>
+              <a
+                href='https://www.youtube.com/c/CodingElf/'
+                rel='noreferrer'
+                target='_blank'
+              >
                 <FaYoutube color='white' />
-              </a>
-              <a href='#'>
-                <FaTwitter color='white' />
               </a>
             </Nav>
           </Navbar.Collapse>
