@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import logo from '../assets/img/logo.svg';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
@@ -32,16 +32,22 @@ export const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
-        <Container>
+      <Navbar
+        collapseOnSelect
+        expand='md'
+        className={scrolled ? 'navbar scrolled' : 'navbar'}
+      >
+        <Container className='navbar-container'>
           <Navbar.Brand href='#home'>
             <img src={logo} alt='Logo' />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls='basic-navbar-nav'>
+
+          <Navbar.Toggle aria-controls='responsive-navbar-nav'>
             <span className='navbar-toggler-icon'></span>
           </Navbar.Toggle>
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
+
+          <Navbar.Collapse id='responsive-navbar-nav'>
+            <Nav className='ms-md-auto'>
               <Nav.Link
                 href='#home'
                 className={
@@ -49,7 +55,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink('home')}
               >
-                Home
+                <span>Home</span>
               </Nav.Link>
               <Nav.Link
                 href='#skills'
@@ -58,7 +64,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink('skills')}
               >
-                Skills
+                <span>Skills</span>
               </Nav.Link>
               <Nav.Link
                 href='#projects'
@@ -69,7 +75,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink('projects')}
               >
-                Projects
+                <span>Projects</span>
               </Nav.Link>
             </Nav>
             <Nav className='social-icon'>
