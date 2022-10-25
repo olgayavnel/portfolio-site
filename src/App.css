@@ -106,7 +106,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: rgb(3, 2, 16);
 }
 nav.navbar a.navbar-brand {
   width: 10%;
@@ -126,6 +126,21 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
+
+/* .navbar-collapse.collapsing,
+.navbar-collapse.show {
+  background: rgb(3, 2, 16);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  gap: 2rem;
+}
+
+.navbar-collapse.collapsing,
+.navbar-collapse.show div {
+  gap: 2rem;
+} */
 
 .social-icon {
   display: inline-block;
@@ -165,6 +180,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
     hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+/* .navbar-collapse.collapsing,
+.navbar-collapse.show .social-icon {
+  margin: 0;
+} */
 
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
@@ -259,6 +278,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 .banner a svg {
   font-size: 25px;
