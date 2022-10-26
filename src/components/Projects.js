@@ -68,7 +68,7 @@ export const Projects = () => {
                     When you, unfortunately, have to understand <br /> your own
                     code one day.
                   </p>
-                  <p>Fix it later.</p>
+                  <p>I'll fix it later.</p>
                   <Row>
                     {projects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
