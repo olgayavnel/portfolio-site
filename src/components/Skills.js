@@ -42,11 +42,11 @@ export const Skills = () => {
   };
 
   return (
-    <section className='skill' id='skills'>
+    <section className='skills' id='skills'>
       <Container>
         <Row>
-          <Col className='col-12'>
-            <div className='skill-bx wow zoomIn'>
+          <Col>
+            <div className='skills-wrapper'>
               <h2>Skills</h2>
               <p>
                 I'm a full-stack developer who<br></br> enjoys building stuff
@@ -56,7 +56,6 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className='owl-carousel owl-theme skill-slider'
-                // autoPlay={this.props.deviceType !== 'mobile' ? true : false}
                 autoPlay
                 autoPlaySpeed={3000}
                 keyBoardControl={true}
