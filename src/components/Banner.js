@@ -66,8 +66,23 @@ export const Banner = () => {
                 </span>
               </h1>
               <p>
-                Let's turn the world into a better place by making quality
-                software.
+                I like writing code and exploring the world of programming. I'm
+                a self-taught developer with a background in digital marketing.
+                My experience working as a software dev is about three years
+                now.
+              </p>
+              <p>
+                I started coding in 2017. Following up my coding journey, I
+                taught myself the fundamentals of computer science and the
+                curriculum offered by the CS degree. After that, I started
+                working with JavaScript and React, and nowadays I'm doing
+                full-stack development, working with React and Django.
+              </p>
+              <p>
+                Fun fact: I have a master's degree in political and social
+                science and used to work in a big tech company doing conversion
+                rate optimization. During my time there, I started learning CS
+                and programming on the side and fell in love with it.
               </p>
               <a
                 href='https://github.com/olgayavnel'
