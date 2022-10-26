@@ -269,6 +269,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  font-style: italic;
 }
 .banner a {
   color: #fff;
@@ -445,6 +446,36 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   bottom: 0;
   width: 35%;
   right: 0;
+  z-index: -4;
+}
+
+/************ About Css ************/
+.about {
+  overflow: hidden;
+  padding: 80px 0;
+  position: relative;
+  background-color: rgb(15, 17, 37, 0.1);
+}
+.about h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.about p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+.about-background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
   z-index: -4;
 }
 
