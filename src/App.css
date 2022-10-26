@@ -382,12 +382,20 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+.project-card-wrapper a {
+  text-decoration: none !important;
+}
+
+.project-card-wrapper a:hover {
+  text-decoration: none;
+}
 .project-card {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
   background: transparent !important;
+  color: #fff;
 }
 .project-card::before {
   content: '';
@@ -396,7 +404,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
     rgb(249, 230, 184, 0.5) -5.91%,
     rgba(74, 47, 189, 0.5) 111.58%
   );
-  opacity: 0.85;
+  opacity: 1;
   position: absolute;
   width: 100%;
   height: 0;

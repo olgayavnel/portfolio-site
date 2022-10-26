@@ -84,6 +84,10 @@ export const Banner = () => {
                 rate optimization. During my time there, I started learning CS
                 and programming on the side and fell in love with it.
               </p>
+              <p>
+                P.S. Yavnel is my non-official surname inherited from my grand
+                grandmother. I use it on the web as a pseudonym.
+              </p>
               <a
                 href='https://github.com/olgayavnel'
                 rel='noreferrer'

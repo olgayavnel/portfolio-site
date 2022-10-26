@@ -7,39 +7,47 @@ import { ProjectCard } from './ProjectCard';
 import projImg1 from '../assets/img/project-img1.svg';
 import projImg2 from '../assets/img/project-img2.svg';
 import projImg3 from '../assets/img/project-img3.svg';
+import projImg4 from '../assets/img/project-img4.svg';
+import projImg5 from '../assets/img/project-img5.svg';
 import colorTile2 from '../assets/img/color-tile-2.png';
 
 export const Projects = () => {
   const projects = [
     {
-      title: 'Business Startup',
+      title: 'Pinterest Clone',
       description: 'Design & Development',
-      imgUrl: projImg1,
+      image: projImg1,
+      url: 'https://github.com/olgayavnel/pinterest-clone',
     },
     {
-      title: 'Business Startup',
+      title: 'NestJS MongoDB App',
       description: 'Design & Development',
-      imgUrl: projImg2,
+      image: projImg2,
+      url: 'https://github.com/olgayavnel/nestjs-with-graphql-and-mongodb',
     },
     {
-      title: 'Business Startup',
+      title: 'UI Components',
       description: 'Design & Development',
-      imgUrl: projImg3,
+      image: projImg3,
+      url: 'https://github.com/olgayavnel/ui-components',
     },
     {
-      title: 'Business Startup',
+      title: 'Cardano Chart',
       description: 'Design & Development',
-      imgUrl: projImg1,
+      image: projImg4,
+      url: 'https://github.com/olgayavnel/cardano-exodus-area-chart',
     },
     {
-      title: 'Business Startup',
+      title: 'Image Reviewer',
       description: 'Design & Development',
-      imgUrl: projImg2,
+      image: projImg5,
+      url: 'https://github.com/olgayavnel/image-reviewer-app',
     },
     {
-      title: 'Business Startup',
+      title: 'Real Estate Site',
       description: 'Design & Development',
-      imgUrl: projImg3,
+      image: projImg2,
+      url: 'https://github.com/olgayavnel/real-estate-site',
     },
   ];
 
