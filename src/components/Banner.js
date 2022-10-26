@@ -66,8 +66,8 @@ export const Banner = () => {
                 </span>
               </h1>
               <p>
-                Experience is the name everyone gives to their mistakes. (Oscar
-                Wilde)
+                Experience is the name everyone gives to their mistakes.{' '}
+                <br></br> (Oscar Wilde)
               </p>
               <a
                 href='https://github.com/olgayavnel'
