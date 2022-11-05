@@ -32,10 +32,10 @@ export const Projects = () => {
       url: 'https://github.com/olgayavnel/ui-components',
     },
     {
-      title: 'Cardano Chart',
+      title: 'Astronomy Pic using NASA API',
       description: 'Design & Development',
       image: projImg4,
-      url: 'https://github.com/olgayavnel/cardano-exodus-area-chart',
+      url: 'https://github.com/olgayavnel/astronomy-pic',
     },
     {
       title: 'Image Reviewer',

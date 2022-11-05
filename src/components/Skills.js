@@ -23,7 +23,6 @@ import colorTile from '../assets/img/color-tile.png';
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -61,8 +60,6 @@ export const Skills = () => {
                 keyBoardControl={true}
                 transitionDuration={500}
                 containerClass='carousel-container'
-                // removeArrowOnDeviceType={['tablet', 'mobile']}
-                // deviceType={this.props.deviceType}
                 dotListClass='custom-dot-list-style'
                 itemClass='carousel-item-padding-40-px'
               >

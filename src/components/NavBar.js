@@ -47,7 +47,7 @@ export const NavBar = () => {
           </Navbar.Toggle>
 
           <Navbar.Collapse id='responsive-navbar-nav'>
-            <Nav className='ms-md-auto'>
+            <Nav className='ms-md-auto flex-column gap-3 gap-md-0 flex-md-row mb-4 mb-md-0 align-items-center'>
               <Nav.Link
                 href='#home'
                 className={
@@ -78,7 +78,8 @@ export const NavBar = () => {
                 <span>Projects</span>
               </Nav.Link>
             </Nav>
-            <Nav className='social-icon'>
+
+            <Nav className='social-icon flex-column gap-3 gap-md-0 flex-md-row mb-4 mb-md-0 align-items-center'>
               <a
                 href='https://www.instagram.com/coding_elf/'
                 rel='noreferrer'
