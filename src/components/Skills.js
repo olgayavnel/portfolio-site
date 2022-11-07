@@ -45,7 +45,7 @@ export const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className='skills-wrapper'>
+            <Container className='skills-wrapper'>
               <h2>Skills</h2>
               <p>
                 I'm a full-stack developer who<br></br> enjoys building stuff
@@ -124,7 +124,7 @@ export const Skills = () => {
                   <h5>VueJS / NuxtJS</h5>
                 </div>
               </Carousel>
-            </div>
+            </Container>
           </Col>
         </Row>
       </Container>
