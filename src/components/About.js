@@ -30,7 +30,7 @@ export const About = () => {
               love with it.
             </p>
             <p>
-              P.S. Yavnel is my non-official surname inherited from my grand
+              P.S. Yavnel is my non-official surname inherited from my great
               grandmother. I use it on the web as a pseudonym.
             </p>
           </Col>
