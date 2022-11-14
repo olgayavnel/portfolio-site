@@ -6,7 +6,11 @@ import colorTile3 from '../assets/img/color-tile-3.png';
 export const About = () => {
   return (
     <section className='about' id='about'>
-      <img className='about-background-image-left' src={colorTile3}></img>
+      <img
+        className='about-background-image-left'
+        src={colorTile3}
+        alt='background-image'
+      ></img>
       <Container>
         <Row>
           <Col size={12}>

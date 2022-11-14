@@ -1,6 +1,5 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
 export const ProjectCard = ({ title, description, image, url }) => {
   return (

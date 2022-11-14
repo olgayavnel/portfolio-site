@@ -24,6 +24,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [runningText]);
 
   const type = () => {
