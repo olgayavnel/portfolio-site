@@ -54,7 +54,7 @@ export const Banner = () => {
             <div>
               <span className='tagline'>Welcome to my Portfolio</span>
               <h1>
-                {`Hi! I'm Olga`}{' '}
+                {`Hi! I'm Olga - `}{' '}
                 <span
                   className='categories'
                   data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
