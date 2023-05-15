@@ -10,6 +10,10 @@ const keyMoments = [
     date: '2013-02 - 2019-11',
   },
   {
+    title: "Graduated with a bachelor's degree",
+    date: '2018-06',
+  },
+  {
     title: 'Freelance Software Developer',
     date: '2019-11 - 2019-12',
   },
@@ -18,7 +22,7 @@ const keyMoments = [
     date: '2019-12 - 2021-01',
   },
   {
-    title: 'Graduated from College',
+    title: "Graduated with a master's degree",
     date: '2021-08',
   },
   {
