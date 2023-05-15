@@ -13,29 +13,24 @@
 
 /************ Custom Font ************/
 @font-face {
-  font-family: Orbitron;
-  src: url('./assets/font/Orbitron-Regular.ttf');
+  font-family: OpenSans;
+  src: url('./assets/font/OpenSans-Regular.ttf');
   font-weight: 400;
 }
 @font-face {
-  font-family: Orbitron;
-  src: url('./assets/font/Orbitron-Bold.ttf');
-  font-weight: 700;
-}
-@font-face {
-  font-family: Orbitron;
-  src: url('./assets/font/Orbitron-SemiBold.ttf');
-  font-weight: 600;
-}
-@font-face {
-  font-family: Orbitron;
-  src: url('./assets/font/Orbitron-Medium.ttf');
+  font-family: OpenSans;
+  src: url('./assets/font/OpenSans-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
-  font-family: Orbitron;
-  src: url('./assets/font/Orbitron-Regular.ttf');
-  font-weight: 400;
+  font-family: OpenSans;
+  src: url('./assets/font/OpenSans-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url('./assets/font/OpenSans-SemiBold.ttf');
+  font-weight: 600;
 }
 
 /************ Default Css ************/
@@ -57,7 +52,7 @@ body {
   height: 100vh;
   background-color: rgb(15, 17, 37) !important;
   color: rgb(255, 255, 255) !important;
-  font-family: 'Orbitron', sans-serif !important;
+  font-family: 'OpenSans', sans-serif !important;
 }
 
 h1,
@@ -145,45 +140,6 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
-}
-
-.social-icon {
-  display: inline-block;
-  margin-left: 0.875rem;
-}
-.social-icon a {
-  width: 2.625rem;
-  height: 2.625rem;
-  background: rgba(217, 217, 217, 0.1);
-  display: inline-flex;
-  border-radius: 50%;
-  margin-right: 0.375rem;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  border: 0.063rem solid rgb(249, 230, 184, 0.5);
-}
-.social-icon a::before {
-  content: '';
-  width: 2.625rem;
-  height: 2.625rem;
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 0.3s ease-in-out;
-}
-.social-icon a:hover::before {
-  transform: scale(1);
-}
-.social-icon a svg {
-  width: 40%;
-  z-index: 1;
-  transition: 0.3s ease-in-out;
-}
-.social-icon a:hover svg {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
-    hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 nav.navbar .navbar-toggler:active,
@@ -363,134 +319,77 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
-.projects {
-  overflow: hidden;
-  padding: 5rem 0;
-  position: relative;
-  background-color: rgb(3, 2, 16, 0.5);
-}
-.projects h2 {
-  font-size: 2.813rem;
-  font-weight: 700;
-  text-align: center;
-}
-.projects p {
-  color: rgb(184, 184, 184);
-  font-size: 1.125rem;
-  letter-spacing: 0.05rem;
-  line-height: 1.7rem;
-  margin: 0.875rem auto 1.875rem auto;
-  text-align: center;
-  width: 56%;
-}
-.project-card-wrapper a {
-  text-decoration: none !important;
+/************ LifeSpanner Css ************/
+.life-spanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.125rem 0;
+  backdrop-filter: blur(230px); /* Add the blurred effect */
 }
 
-.project-card-wrapper a:hover {
-  text-decoration: none;
+.life-spanner h2 {
+  padding-bottom: 2rem;
+  text-align: center;
 }
-.project-card {
-  position: relative;
-  border-radius: 1.875rem;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  background: transparent !important;
-  color: rgb(255, 255, 255);
-}
-.project-card::before {
-  content: '';
-  background: var(--gradient);
-  opacity: 1;
-  position: absolute;
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f5f5f5;
 }
-.project-card:hover::before {
-  height: 100%;
+
+.timeline::-webkit-scrollbar {
+  width: 8px;
 }
-.project-card-body {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
+
+.timeline::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.moment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.moment-line {
   width: 100%;
-}
-.project-card:hover .project-card-body {
-  top: 50%;
-  opacity: 1;
-}
-.project-card-body h4 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  letter-spacing: 0.05rem;
-  line-height: 1.3rem;
-}
-.project-card-body span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.938rem;
-  letter-spacing: 0.05rem;
-}
-div.project-card-title {
-  color: rgb(8, 9, 26);
-  font-weight: 600;
-}
-p.project-card-info {
-  color: rgba(74, 47, 189, 0.5);
-  font-weight: 600;
-}
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
+  height: 2px;
+  background-color: #ccc;
 }
 
-/************ About Css ************/
-.about {
-  overflow: hidden;
-  padding: 5rem 0;
-  position: relative;
-  background-color: rgb(15, 17, 37, 0.1);
-}
-.about h2 {
-  font-size: 2.813rem;
-  font-weight: 700;
+.moment-content {
+  margin-top: 1.25rem;
   text-align: center;
-}
-.about p {
-  color: rgb(184, 184, 184);
-  font-size: 1.125rem;
-  letter-spacing: 0.05rem;
-  line-height: 1.7rem;
-  margin: 0.875rem auto 1.875rem auto;
-  text-align: center;
-  width: 56%;
 }
 
-.about-background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+.moment-date {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.moment-title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 /************ Footer Css ************/
 .footer {
   padding: 3.125rem 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .footer img {

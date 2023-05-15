@@ -15,9 +15,6 @@ import planet9 from '../assets/img/planet-9.svg';
 import planet10 from '../assets/img/planet-10.svg';
 import planet11 from '../assets/img/planet-11.svg';
 import planet12 from '../assets/img/planet-12.svg';
-import planet13 from '../assets/img/planet-13.svg';
-import planet14 from '../assets/img/planet-14.svg';
-import planet15 from '../assets/img/planet-15.svg';
 import colorTile from '../assets/img/color-tile.png';
 
 export const Skills = () => {
@@ -48,15 +45,13 @@ export const Skills = () => {
             <Container className='skills-wrapper'>
               <h2>Skills</h2>
               <p>
-                I'm a full-stack developer who<br></br> enjoys building stuff
-                and learning new things every day.
+                I'm a full-stack developer specializing on frontend<br></br> and
+                I enjoy creating web apps.
               </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
                 className='owl-carousel owl-theme skill-slider'
-                autoPlay
-                autoPlaySpeed={3000}
                 keyBoardControl={true}
                 transitionDuration={500}
                 containerClass='carousel-container'
@@ -65,27 +60,27 @@ export const Skills = () => {
               >
                 <div className='item'>
                   <img src={planet1} alt='ReactJS' />
-                  <h5>JavaScript / TypeScript</h5>
+                  <h5>JavaScript (TypeScript)</h5>
                 </div>
                 <div className='item'>
                   <img src={planet2} alt='Planet' />
-                  <h5>ReactJS / React Native</h5>
+                  <h5>ReactJS / NextJS</h5>
                 </div>
                 <div className='item'>
                   <img src={planet3} alt='Planet' />
-                  <h5>Web Development</h5>
+                  <h5>Responsive UI</h5>
                 </div>
                 <div className='item'>
                   <img src={planet4} alt='Planet' />
-                  <h5>NodeJS / NestJS</h5>
+                  <h5>CSS Animation </h5>
                 </div>
                 <div className='item'>
                   <img src={planet5} alt='Planet' />
-                  <h5>Backend Development</h5>
+                  <h5>NodeJS /NestJS</h5>
                 </div>
                 <div className='item'>
                   <img src={planet6} alt='Planet' />
-                  <h5>Python3</h5>
+                  <h5>Python</h5>
                 </div>
                 <div className='item'>
                   <img src={planet7} alt='Planet' />
@@ -93,7 +88,7 @@ export const Skills = () => {
                 </div>
                 <div className='item'>
                   <img src={planet8} alt='Planet' />
-                  <h5>MongoDB / Mongoose</h5>
+                  <h5>MongoDB</h5>
                 </div>
                 <div className='item'>
                   <img src={planet9} alt='Planet' />
@@ -101,27 +96,15 @@ export const Skills = () => {
                 </div>
                 <div className='item'>
                   <img src={planet10} alt='Planet' />
-                  <h5>SQL / PostgreSQL</h5>
+                  <h5>Docker</h5>
                 </div>
                 <div className='item'>
                   <img src={planet11} alt='Planet' />
-                  <h5>Docker / GitLab</h5>
+                  <h5>Git</h5>
                 </div>
                 <div className='item'>
                   <img src={planet12} alt='Planet' />
-                  <h5>Java Fundamentals</h5>
-                </div>
-                <div className='item'>
-                  <img src={planet13} alt='Planet' />
-                  <h5>Data Structures and Algorithms</h5>
-                </div>
-                <div className='item'>
-                  <img src={planet14} alt='Planet' />
-                  <h5>CSS Advanced Animation</h5>
-                </div>
-                <div className='item'>
-                  <img src={planet15} alt='Planet' />
-                  <h5>VueJS / NuxtJS</h5>
+                  <h5>Gitlab CI/CD</h5>
                 </div>
               </Carousel>
             </Container>
