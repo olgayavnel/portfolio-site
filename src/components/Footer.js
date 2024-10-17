@@ -12,7 +12,7 @@ export const Footer = () => {
             sm={6}
             className='justify-content-center d-flex d-sm-block order-sm-0 order-1'
           >
-            <img src={logo} alt='Logo' />
+            <span className="text-white">Olga Ivanova</span>
           </Col>
           <Col sm={6} className='text-center text-sm-end'>
             <p>&copy; 2023. All Rights Reserved</p>
