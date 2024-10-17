@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import logo from '../assets/img/logo.svg';
 
 const NAVIGATION_LINKS = [
   { id: 'home', label: 'Home' },
@@ -42,7 +41,7 @@ export const NavBar = () => {
     >
       <Container className='navbar-container'>
         <Navbar.Brand href='#home'>
-          <img src={logo} alt='Logo' />
+          Olga Ivanova
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls='responsive-navbar-nav'>
