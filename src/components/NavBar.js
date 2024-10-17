@@ -41,7 +41,7 @@ export const NavBar = () => {
     >
       <Container className='navbar-container'>
         <Navbar.Brand href='#home'>
-          <span className=''>Olga Ivanova</span>
+          <span className="text-white">Olga Ivanova</span>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls='responsive-navbar-nav'>
